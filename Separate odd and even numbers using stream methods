@@ -1,0 +1,22 @@
+package java8;
+import java.util.ArrayList;
+
+public class Java8tasks {
+                                                    // Separate Odd And Even Numbers
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList<Integer>l=new ArrayList<>();
+		l.add(2);
+		l.add(4);
+		l.add(5);
+		l.add(6);
+		l.add(7);
+		l.add(9);
+		
+		l.stream().filter((a)->a%2==0).forEach((c)->System.out.println(c));
+		System.out.println();
+		l.stream().filter((a)->a%2==1).forEach((c)->System.out.println(c));
+	}
+
+}
